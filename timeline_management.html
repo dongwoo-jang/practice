@@ -3,175 +3,287 @@
 
 <head>
     <title>일정관리</title>
-    <h2><a HREF="https://dongwoo-jang.github.io/practice/timeline_management.html">휘트니스투데이 회훤 일정관리 시스템</a></h2>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N05TGKRX77"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-N05TGKRX77');
-</script>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        div {
+            margin: 0px;
+        }
+
+        a {
+            color: #a2a2a2;
+            text-decoration: none;
+
+        }
+
+        /**
+        h2 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 500px;
+            height: 30px;
+            padding: 0;
+        }
+        .topmenu{
+            position: relative;
+            height: 30px;
+
+            padding: 5px 0 0 0px;
+            background-repeat: repeat-x;
+        }
+         **/
+        h4 {
+            margin: 0px;
+            color: #a2a2a2;
+            background-color: #464646;
+            padding: 10px;
+        }
+
+        ul {
+            margin: 10px;
+            border: 2px solid #717171;
+            /* border-left: 2px solid lightslategrey;
+            border-bottom: 2px solid lightslategrey; */
+            width: 160px;
+            padding: 10px 10px 10px 30px;
+        }
+
+        #time_table {
+            
+            text-align: center;
+            border: 2px solid #464646;
+            margin: 20px;
+            padding: 10px;
+        }
+        #home_logo {
+            color: #dddddd;
+            font-size: larger;
+            font-style: inherit;
+        }
+
+        #current_page {
+            color:#a2a2a2;
+            text-decoration: underline;
+        }
+        #grid {
+            /* border: 2px solid coral; */
+            display:grid;
+            grid-template-columns: 1fr 3fr;
+            border-left: 30px solid #717171;
+            border-right: 30px solid #717171;
+        }
+        #comfirm_button {
+            margin-left: auto;
+            margin-right: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width:20%;
+            color:black;
+            text-align: center;
+            border: 2px solid #464646;
+            
+            padding: 3px 10px 3px 10px;
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N05TGKRX77"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N05TGKRX77');
+    </script>
 </head>
 
+
+
 <body>
+    <!--
+        <h2><a href="https://dongwoo-jang.github.io/practice/timeline_management.html">휘트니스투데이 회원 일정관리 시스템</a></h2>
+    -->
+    <h4>
+        <a href="https://dongwoo-jang.github.io/practice/timeline_management.html" id="home_logo"> 회원 일정관리 시스템</a>
+        <a href="https://dongwoo-jang.github.io/practice/timeline_management.html" class="topmenu"
+            id="current_page">일정관리</a>
+        <a href="https://dongwoo-jang.github.io/practice/trainee_management.html" class="topmenu">회원관리</a>
+        <a href="https://dongwoo-jang.github.io/practice/overview.html" class="topmenu">통계</a>
+        <a href="https://dongwoo-jang.github.io/practice/history.html" class="topmenu">히스토리</a>
+    </h4>
+    <div id=grid>
+        <div id=div1>
+            <!-- <img src="logo.jfif" width="70px"> -->
+            <ul>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>김철수</strong>회원님 (17/30)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>김영희</strong>회원님 (7/10)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>막국수</strong>회원님 (2/10)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>김철수</strong>회원님 (17/30)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>김영희</strong>회원님 (7/10)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>막국수</strong>회원님 (2/10)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>김철수</strong>회원님 (17/30)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>김영희</strong>회원님 (7/10)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>막국수</strong>회원님 (2/10)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
 
-    <img src="logo.jfif" width="10%">
-    <ul>
-        <li><a HREF="https://dongwoo-jang.github.io/practice/timeline_management.html">일정관리</a></li>
-        <li><a HREF="https://dongwoo-jang.github.io/practice/trainee_management.html">회원관리</a></li>
-        <li><a HREF="https://dongwoo-jang.github.io/practice/overview.html">통계</a></li>
-        <li><a HREF="https://dongwoo-jang.github.io/practice/history.html">히스토리</a></li>
-    </ul>
-    <ul>
-        <li><strong>홍길동</strong>회원님 (3/10)</li>
-        <li><strong>김철수</strong>회원님 (17/30)</li>
-        <li><strong>홍길동</strong>회원님 (3/10)</li>
-        <li><strong>김영희</strong>회원님 (7/10)</li>
-        <li><strong>홍길동</strong>회원님 (3/10)</li>
-        <li><strong>막국수</strong>회원님 (2/10)</li>
-    </ul>
-
-    <table>
-        <tr>
-            <td></td>
-            <td>월</td>
-            <td>화</td>
-            <td>수</td>
-            <td>목</td>
-            <td>금</td>
-            <td>토</td>
-        </tr>
-        <tr>
-            <td>08:00</td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>09:00</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>10:00</td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>11:00</td>
-            <td></td>
-            <td></td>
-            <td>X</td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>12:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>01:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>02:00</td>
-            <td></td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>03:00</td>
-            <td></td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>04:00</td>
-            <td></td>
-            <td></td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-        </tr>
-        <tr>
-            <td>05:00</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>06:00</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>07:00</td>
-            <td></td>
-            <td>X</td>
-            <td>X</td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>08:00</td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-            <td>X</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>09:00</td>
-            <td>X</td>
-            <td>X</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-
-    <a href="https://dongwoo-jang.github.io/practice/confirm_modal.html"> 확인 </a>
+            </ul>
+        </div>
+        <div id=div2>
+            <table id= time_table>
+                <tr>
+                    <td></td>
+                    <td>월</td>
+                    <td>화</td>
+                    <td>수</td>
+                    <td>목</td>
+                    <td>금</td>
+                    <td>토</td>
+                </tr>
+                <tr>
+                    <td>08:00</td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>01:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>02:00</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>03:00</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>04:00</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>05:00</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>06:00</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>07:00</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>08:00</td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            
+        </div>
+        <div></div>
+        <a href="https://dongwoo-jang.github.io/practice/confirm_modal.html" id=comfirm_button> 확인 </a>
+    </div>
 
     <body>
 
