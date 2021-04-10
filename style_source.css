@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+}
+.topmenu {
+    margin: 0px;
+    color: #a2a2a2;
+    background-color: #464646;
+    padding: 10px;  
+    text-decoration: none;
+}
+.home_logo {
+    color: #dddddd;
+    font-size: larger;
+    font-style: inherit;
+    text-decoration: none;
+}
+#current_page {
+    color: #a2a2a2;
+    text-decoration: underline;
+}
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    border-left: 30px solid #717171;
+    border-right: 30px solid #717171; 
+    padding: 20px;
+}
+.grid2 {
+    display:grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    border-left: 30px solid #717171;
+    border-right: 30px solid #717171;
+}
+.calendar_date {
+    margin: 0px;
+    color: #464646;
+    background-color: #a2a2a2;
+    padding: 15px 20px 15px 20px;
+    border: 0.5px solid #252525;
+}
+.table_head{
+    margin: 0px;
+    color: #f0f0f0;
+    background-color: #464646;
+    padding: 20px;
+    border: 0.5px solid #a2a2a2;
+}
+.traineelist_area {
+    margin:  auto;
+}
+.calendar_area {
+    margin: 0px auto auto auto;
+}
+.traineemanagemenu_area {
+    margin:  auto;
+}
+.traineelist{
+    border: 0.5px solid #a2a2a2;
+    padding: 20px 20px 20px 40px;
+}
+.traineemanagemenu{
+    border: 0.5px solid #a2a2a2;
+    padding: 20px 20px 20px 40px;
+}
+.comfirm_button {
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    color: black;
+    text-align: center;
+    border: 2px solid #464646;
+    padding: 3px 10px 3px 10px;
+}

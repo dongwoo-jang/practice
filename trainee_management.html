@@ -3,43 +3,69 @@
 
 <head>
     <title>회원관리</title>
-    <h2><a href="https://dongwoo-jang.github.io/practice/timeline_management.html">휘트니스투데이 회원 일정관리 시스템</a></h2>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N05TGKRX77"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="stylesheet" href="style_source.css">
+    <style>
+        /* @media(max-width:600px){
+            .grid {
+                display: block;
+            }   
+            .topmenu {
+                font-size:12px;
+            }
+        } */
+    </style>
 
-  gtag('config', 'G-N05TGKRX77');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N05TGKRX77"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N05TGKRX77');
+    </script>
 </head>
 
 <body>
 
-    <img src="logo.jfif" width="10%">
-    <ul>
-        <li><a href="https://dongwoo-jang.github.io/practice/timeline_management.html">일정관리</a></li>
-        <li><a href="https://dongwoo-jang.github.io/practice/trainee_management.html">회원관리</a></li>
-        <li><a href="https://dongwoo-jang.github.io/practice/overview.html">통계</a></li>
-        <li><a href="https://dongwoo-jang.github.io/practice/history.html">히스토리</a></li>
-    </ul>
-    <ul>
-        <li><strong>홍길동</strong>회원님 (3/10)</li>
-        <li><strong>김철수</strong>회원님 (17/30)</li>
-        <li><strong>홍길동</strong>회원님 (3/10)</li>
-        <li><strong>김영희</strong>회원님 (7/10)</li>
-        <li><strong>홍길동</strong>회원님 (3/10)</li>
-        <li><strong>막국수</strong>회원님 (2/10)</li>
-    </ul>
-    <ul>
-        <li>회원정보 추가</li>
-        <li>회원정보 삭제</li>
-        <li>회원정보 수정</li>
-    </ul>
+
+    <h4 class=topmenu>
+        <a href="https://dongwoo-jang.github.io/practice/timeline_management.html" class="home_logo"> 회원 일정관리 시스템</a>
+        <a href="https://dongwoo-jang.github.io/practice/timeline_management.html" class="topmenu"
+            id="current_page">일정관리</a>
+        <a href="https://dongwoo-jang.github.io/practice/trainee_management.html" class="topmenu">회원관리</a>
+        <a href="https://dongwoo-jang.github.io/practice/overview.html" class="topmenu">통계</a>
+        <a href="https://dongwoo-jang.github.io/practice/history.html" class="topmenu">히스토리</a>
+    </h4>
 
 
-    <a href="https://dongwoo-jang.github.io/practice/confirm_modal.html"> 확인 </a>
+    <div class=grid>
+        <div>
+            <img src="logo.jfif" width="10%">
+        </div>
+        <div></div>
+        <div class=traineelist_area>
+            <ul class=traineelist>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>김철수</strong>회원님 (17/30)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>김영희</strong>회원님 (7/10)</li>
+                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li><strong>막국수</strong>회원님 (2/10)</li>
+            </ul>
+        </div>
+        <div class=traineemanagemenu_area>
+            <ul class=traineemanagemenu>
+                <li>회원정보 추가</li>
+                <li>회원정보 삭제</li>
+                <li>회원정보 수정</li>
+            </ul>
+        </div>
+        <div>
+        </div>
+        <a href ="https://dongwoo-jang.github.io/practice/confirm_modal.html"  class=comfirm_button> 확인 </a>
+    </div>
+
 
     <body>
 

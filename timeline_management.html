@@ -3,90 +3,21 @@
 
 <head>
     <title>일정관리</title>
-
+    <link rel="stylesheet" href="style_source.css">
     <style>
-        body {
-            margin: 0px;
+         .traineelist_area {
+            margin:  auto;
+        }
+        .calendar_area {
+            margin: 0px auto auto auto;
+        }
+        .traineelist{
+            border: 0.5px solid #a2a2a2;
+            padding: 20px 20px 20px 40px;
         }
 
-        div {
-            margin: 0px;
-        }
-
-        a {
-            color: #a2a2a2;
-            text-decoration: none;
-
-        }
-
-        /**
-        h2 {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 500px;
-            height: 30px;
-            padding: 0;
-        }
-        .topmenu{
-            position: relative;
-            height: 30px;
-
-            padding: 5px 0 0 0px;
-            background-repeat: repeat-x;
-        }
-         **/
-        h4 {
-            margin: 0px;
-            color: #a2a2a2;
-            background-color: #464646;
-            padding: 10px;
-        }
-
-        ul {
-            margin: 20px auto 20px auto;
-            border: 2px solid #717171;
-            /* border-left: 2px solid lightslategrey;
-            border-bottom: 2px solid lightslategrey; */
-            width: 160px;
-            padding: 10px 10px 10px 30px;
-        }
-
-        #time_table {
-            margin: 20px auto 20px auto;
-            border: 2px solid #464646;
-            padding: 10px;
-        }
-        #home_logo {
-            color: #dddddd;
-            font-size: larger;
-            font-style: inherit;
-        }
-
-        #current_page {
-            color:#a2a2a2;
-            text-decoration: underline;
-        }
-        #grid {
-            /* border: 2px solid coral; */
-            display:grid;
-            grid-template-columns: 1fr 1.5fr;
-            border-left: 30px solid #717171;
-            border-right: 30px solid #717171;
-        }
-        #comfirm_button {
-            margin-left: auto;
-            margin-right: 30px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width:20%;
-            color:black;
-            text-align: center;
-            border: 2px solid #464646;
-            
-            padding: 3px 10px 3px 10px;
-        }
     </style>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N05TGKRX77"></script>
@@ -100,23 +31,21 @@
 </head>
 
 
-
 <body>
-    <!--
-        <h2><a href="https://dongwoo-jang.github.io/practice/timeline_management.html">휘트니스투데이 회원 일정관리 시스템</a></h2>
-    -->
-    <h4>
-        <a href="https://dongwoo-jang.github.io/practice/timeline_management.html" id="home_logo"> 회원 일정관리 시스템</a>
+
+    <h4 class=topmenu>
+        <a href="https://dongwoo-jang.github.io/practice/timeline_management.html" class="home_logo"> 회원 일정관리 시스템</a>
         <a href="https://dongwoo-jang.github.io/practice/timeline_management.html" class="topmenu"
             id="current_page">일정관리</a>
         <a href="https://dongwoo-jang.github.io/practice/trainee_management.html" class="topmenu">회원관리</a>
         <a href="https://dongwoo-jang.github.io/practice/overview.html" class="topmenu">통계</a>
         <a href="https://dongwoo-jang.github.io/practice/history.html" class="topmenu">히스토리</a>
     </h4>
-    <div id=grid>
-        <div id=div1>
+    <div class=grid>
+        <div class=traineelist_area>
             <!-- <img src="logo.jfif" width="70px"> -->
-            <ul>
+                <h2 class="traineelist_title">회원정보</h2>
+            <ul class=traineelist>
                 <li><strong>홍길동</strong>회원님 (3/10)</li>
                 <li><strong>김철수</strong>회원님 (17/30)</li>
                 <li><strong>홍길동</strong>회원님 (3/10)</li>
@@ -136,151 +65,285 @@
                 <li><strong>홍길동</strong>회원님 (3/10)</li>
                 <li><strong>막국수</strong>회원님 (2/10)</li>
                 <li><strong>홍길동</strong>회원님 (3/10)</li>
-
             </ul>
         </div>
-        <div id=div2>
-            <table id= time_table>
-                <tr>
-                    <td></td>
-                    <td>월</td>
-                    <td>화</td>
-                    <td>수</td>
-                    <td>목</td>
-                    <td>금</td>
-                    <td>토</td>
-                </tr>
-                <tr>
-                    <td>08:00</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>09:00</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>10:00</td>
-                    <td>X</td>
-                    <td></td>
-                    <td></td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>11:00</td>
-                    <td></td>
-                    <td></td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>01:00</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>02:00</td>
-                    <td></td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>03:00</td>
-                    <td></td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>04:00</td>
-                    <td></td>
-                    <td></td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                </tr>
-                <tr>
-                    <td>05:00</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>06:00</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>07:00</td>
-                    <td></td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>08:00</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>09:00</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-            
+        <div class=calendar_area >
+                <h2 class="calendar_title">달력정보</h2>
+            <div class="calendar">
+                <table cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr class=table_head>
+                            <th scope="col" class="frst_bd"><span>일</span></th>
+                            <th scope="col"><span>월</span></th>
+                            <th scope="col"><span>화</span></th>
+                            <th scope="col"><span>수</span></th>
+                            <th scope="col"><span>목</span></th>
+                            <th scope="col"><span>금</span></th>
+                            <th scope="col"><span>토</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="_calendarTableBody">
+                        <tr>
+                            <td class="frst_bd">
+                                <div class="calendar_date" nyear="2021" nmonth="3" ndate="28">
+                                    <div class="date_head">
+                                        <div class="calendar_day m_pre _prev_month _day">28</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="3" ndate="29">
+                                    <div class="date_head">
+                                        <div class="calendar_day m_pre _prev_month _day">29</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="3" ndate="30">
+                                    <div class="date_head">
+                                        <div class="calendar_day m_pre _prev_month _day">30</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="3" ndate="31">
+                                    <div class="date_head">
+                                        <div class="calendar_day m_pre _prev_month _day">31</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="1">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">1</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="2">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">2</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="3">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">3</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="frst_bd">
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="4">
+                                    <div class="date_head">
+                                        <div class="calendar_day s_day">4</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="5">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">5</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="6">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">6</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="7">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">7</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="8">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">8</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="9">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">9</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="calendar_today">
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="10">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">10</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="frst_bd">
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="11">
+                                    <div class="date_head">
+                                        <div class="calendar_day s_day">11</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="12">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">12</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="13">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">13</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="14">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">14</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="15">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">15</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="16">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">16</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="17">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">17</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="frst_bd">
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="18">
+                                    <div class="date_head">
+                                        <div class="calendar_day s_day">18</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="19">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">19</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="20">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">20</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="21">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">21</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="22">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">22</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="23">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">23</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="24">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">24</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="frst_bd">
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="25">
+                                    <div class="date_head">
+                                        <div class="calendar_day s_day">25</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="26">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">26</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="27">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">27</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="28">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">28</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="29">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">29</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="4" ndate="30">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">30</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="calendar_date" nyear="2021" nmonth="5" ndate="1">
+                                    <div class="date_head">
+                                        <div class="calendar_day ">1</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div></div>
-        <a href="https://dongwoo-jang.github.io/practice/confirm_modal.html" id=comfirm_button> 확인 </a>
+        <a href="https://dongwoo-jang.github.io/practice/confirm_modal.html" class=comfirm_button> 확인 </a>
     </div>
 
     <body>
