@@ -4,18 +4,20 @@
 <head>
     <title>일정관리</title>
     <link rel="stylesheet" href="style_source.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
-         .traineelist_area {
-            margin:  auto;
+        .traineelist_area {
+            margin: auto;
         }
+
         .calendar_area {
             margin: 0px auto auto auto;
         }
-        .traineelist{
+
+        .traineelist {
             border: 0.5px solid #a2a2a2;
             padding: 20px 20px 20px 40px;
         }
-
     </style>
 
 
@@ -44,45 +46,45 @@
     <div class=grid>
         <div class=traineelist_area>
             <!-- <img src="logo.jfif" width="70px"> -->
-                <h2 class="traineelist_title">회원정보</h2>
+            <h2 class="traineelist_title">회원정보</h2>
             <ul class=traineelist>
-                <li><strong>홍길동</strong>회원님 (3/10)</li>
-                <li><strong>김철수</strong>회원님 (17/30)</li>
-                <li><strong>홍길동</strong>회원님 (3/10)</li>
-                <li><strong>김영희</strong>회원님 (7/10)</li>
-                <li><strong>홍길동</strong>회원님 (3/10)</li>
-                <li><strong>막국수</strong>회원님 (2/10)</li>
-                <li><strong>홍길동</strong>회원님 (3/10)</li>
-                <li><strong>김철수</strong>회원님 (17/30)</li>
-                <li><strong>홍길동</strong>회원님 (3/10)</li>
-                <li><strong>김영희</strong>회원님 (7/10)</li>
-                <li><strong>홍길동</strong>회원님 (3/10)</li>
-                <li><strong>막국수</strong>회원님 (2/10)</li>
-                <li><strong>홍길동</strong>회원님 (3/10)</li>
-                <li><strong>김철수</strong>회원님 (17/30)</li>
-                <li><strong>홍길동</strong>회원님 (3/10)</li>
-                <li><strong>김영희</strong>회원님 (7/10)</li>
-                <li><strong>홍길동</strong>회원님 (3/10)</li>
-                <li><strong>막국수</strong>회원님 (2/10)</li>
-                <li><strong>홍길동</strong>회원님 (3/10)</li>
+                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
+                <li class=trainee><strong>김철수</strong>회원님 (17/30)</li>
+                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
+                <li class=trainee><strong>김영희</strong>회원님 (7/10)</li>
+                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
+                <li class=trainee><strong>막국수</strong>회원님 (2/10)</li>
+                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
+                <li class=trainee><strong>김철수</strong>회원님 (17/30)</li>
+                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
+                <li class=trainee><strong>김영희</strong>회원님 (7/10)</li>
+                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
+                <li class=trainee><strong>막국수</strong>회원님 (2/10)</li>
+                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
+                <li class=trainee><strong>김철수</strong>회원님 (17/30)</li>
+                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
+                <li class=trainee><strong>김영희</strong>회원님 (7/10)</li>
+                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
+                <li class=trainee><strong>막국수</strong>회원님 (2/10)</li>
+                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
             </ul>
         </div>
-        <div class=calendar_area >
-                <h2 class="calendar_title">달력정보</h2>
+        <div class=calendar_area>
+            <h2 class="calendar_title">달력정보</h2>
             <div class="calendar">
-                <table cellspacing="0" cellpadding="0">
-                    <thead>
-                        <tr class=table_head>
-                            <th scope="col" class="frst_bd"><span>일</span></th>
-                            <th scope="col"><span>월</span></th>
-                            <th scope="col"><span>화</span></th>
-                            <th scope="col"><span>수</span></th>
-                            <th scope="col"><span>목</span></th>
-                            <th scope="col"><span>금</span></th>
-                            <th scope="col"><span>토</span></th>
+                <table class=calendar cellspacing="0" cellpadding="1">
+                    <thead class="calendar_head">
+                        <tr>
+                            <th class="frst_bd"><span>일</span></th>
+                            <th><span>월</span></th>
+                            <th><span>화</span></th>
+                            <th><span>수</span></th>
+                            <th><span>목</span></th>
+                            <th><span>금</span></th>
+                            <th><span>토</span></th>
                         </tr>
                     </thead>
-                    <tbody class="_calendarTableBody">
+                    <tbody class="calendar_body">
                         <tr>
                             <td class="frst_bd">
                                 <div class="calendar_date" nyear="2021" nmonth="3" ndate="28">
@@ -343,9 +345,9 @@
             </div>
         </div>
         <div></div>
-        <a href="https://dongwoo-jang.github.io/practice/confirm_modal.html" class=comfirm_button> 확인 </a>
+        <div class=butten>
+            <input type="button" value="저장" onclick="alert('저장되었습니다!')">
+        </div>
     </div>
-
     <body>
-
 </html>
