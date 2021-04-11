@@ -47,26 +47,20 @@
         <div class=traineelist_area>
             <!-- <img src="logo.jfif" width="70px"> -->
             <h2 class="traineelist_title">회원정보</h2>
+            <script >
+                var trainee_num =['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '반복', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '반복', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '반복', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', ]
+                var trainee_name =['홍길동', '김철수', '김영희', '막국수', '나임원', '박첨지', '김미리내', '양소원', '어부바', '존시나', '반복', '홍길동', '김철수', '김영희', '막국수', '나임원', '박첨지', '김미리내', '양소원', '어부바', '존시나', '반복', '홍길동', '김철수', '김영희', '막국수', '나임원', '박첨지', '김미리내', '양소원', '어부바', '존시나', '반복', '홍길동', '김철수', '김영희', '막국수', '나임원', '박첨지', '김미리내', '양소원', '어부바', '존시나'];
+                var traine_contract =['10', '30', '10', '10', '10', '10', '40', '10', '10', '10', '반복', '10', '30', '10', '10', '10', '10', '40', '10', '10', '10', '반복', '10', '30', '10', '10', '10', '10', '40', '10', '10', '10', '반복', '10', '30', '10', '10', '10', '10', '40', '10', '10', '10']
+                var traine_count =['1', '17', '10', '3', '5', '2', '23', '9', '8', '0', '반복', '1', '17', '10', '3', '5', '2', '23', '9', '8', '0', '반복', '1', '17', '10', '3', '5', '2', '23', '9', '8', '0', '반복', '1', '17', '10', '3', '5', '2', '23', '9', '8', '0']
+            </script>
             <ul class=traineelist>
-                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
-                <li class=trainee><strong>김철수</strong>회원님 (17/30)</li>
-                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
-                <li class=trainee><strong>김영희</strong>회원님 (7/10)</li>
-                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
-                <li class=trainee><strong>막국수</strong>회원님 (2/10)</li>
-                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
-                <li class=trainee><strong>김철수</strong>회원님 (17/30)</li>
-                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
-                <li class=trainee><strong>김영희</strong>회원님 (7/10)</li>
-                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
-                <li class=trainee><strong>막국수</strong>회원님 (2/10)</li>
-                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
-                <li class=trainee><strong>김철수</strong>회원님 (17/30)</li>
-                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
-                <li class=trainee><strong>김영희</strong>회원님 (7/10)</li>
-                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
-                <li class=trainee><strong>막국수</strong>회원님 (2/10)</li>
-                <li class=trainee><strong>홍길동</strong>회원님 (3/10)</li>
+                <script>
+                    var i = 0
+                    while (i < trainee_num.length){
+                        document.write('<li class=trainee>' + '<strong>' + trainee_name[i] + '</strong>' + ' 회원님 ' + '('+traine_count[i] + '/' + traine_contract[i] + ')' + '</li>');
+                        i= i + 1;
+                    }
+                </script>
             </ul>
         </div>
         <div class=calendar_area>
